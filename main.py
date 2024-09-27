@@ -142,9 +142,6 @@ def main():
     # Display context
     st.write(st.session_state.pack['context'])
 
-    # Display the randomly selected hand
-    st.write(f"Your current hand: {st.session_state.hand}")
-
     # Display actions and get user decision
     actions = st.session_state.pack['actions']
     user_action = display_strategy(actions, st.session_state.hand)
